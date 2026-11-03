@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Ibrahim - Contact</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
+<nav aria-label="Main navigation">
+<a href="index.html">Mohamed Ibrahim</a>
+<button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<button class="theme-button" id="theme-button">Dark mode</button>
+</nav>
+</header>
+<main id="main">
+<h1>Contact</h1>
+<p>You can email me at <a href="mailto:mi397@njit.edu">mi397@njit.edu</a> or <a href="mailto:mibrahimm0100@gmail.com">mibrahimm0100@gmail.com</a>.</p>
+<section>
+<h2>Contact form</h2>
+<p>This is a static site with no backend, so the form cannot send a message on its own. It checks your input with JavaScript and then directs you to email me at the addresses above.</p>
+<form id="contact-form" novalidate>
+<label for="name">Name</label>
+<input id="name" name="name" type="text" required>
+<label for="email">Email</label>
+<input id="email" name="email" type="email" required>
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+<button type="submit">Send message</button>
+<p id="form-result" aria-live="polite"></p>
+</form>
+</section>
+</main>
+<footer><p>Mohamed Ibrahim - NJIT student - Fall 2026</p></footer>
+</body>
+</html>
