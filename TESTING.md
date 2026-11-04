@@ -39,4 +39,4 @@ Images used in this site are all under 500 KB. The Weather Data Logger screensho
 ## Live test run 2026-11-03
 - Live site tested 2026-11-03 in a desktop browser (1919x998). No site failures were found in the tests that could be run.
 - Not verified in that browser, and not claimed as passed: phone width (375px) layout, mobile menu open/close, DevTools console log, and Lighthouse Accessibility scores. Those need a real phone or real DevTools session, planned for Nov 4/5 before Canvas submission.
-- This file was updated locally on 2026-11-03 and is NOT yet pushed. Pushing is deliberately held for a later real day, to keep the commit history over multiple days honest.
+- This file was prepared on 2026-11-03 and pushed as a real commit on 2026-11-04, to keep the commit history over multiple days honest.
