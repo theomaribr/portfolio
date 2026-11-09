@@ -30,6 +30,14 @@ footer{border-top:1px solid var(--border);padding:1.75rem;text-align:center;colo
 .photo-grid img{transition:transform 0.3s ease}
 .photo-grid figure:hover img{transform:scale(1.03)}
 .image-caption{color:var(--muted);margin-top:0.5rem}
+.hero{background:linear-gradient(135deg,#e11d48,#7c3aed);color:#fff;border-radius:22px;padding:2.5rem 2rem;margin-bottom:2rem}
+.hero h1{color:#fff}
+.hero h1::after{background:#fff}
+.hero-tag{font-size:1.15rem;line-height:1.6}
+.hero-button{display:inline-block;background:#fff;color:#7c3aed;border-radius:999px;padding:0.8rem 1.4rem;font-weight:700;margin:0.25rem;text-decoration:none}
+.hero-button-light{background:transparent;color:#fff;border:2px solid #fff}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.card-grid .card{margin:0}
 .lights{display:flex;gap:0.6rem;margin:1rem 0}
 .f1-light{width:2.2rem;height:2.2rem;border-radius:50%;background:#334155;display:inline-block}
 .f1-light.on{background:#ef4444;box-shadow:0 0 12px #ef4444}
