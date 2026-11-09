@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohamed Ibrahim - Game</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header>
+<nav aria-label="Main navigation">
+<a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">MI</span> Mohamed Ibrahim</a>
+<button class="menu-button" id="menu-button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="game.html">Game</a></li>
+</ul>
+<button class="theme-button" id="theme-button">Dark mode</button>
+</nav>
+</header>
+<main id="main">
+<h1>Rock, Paper, Scissors</h1>
+<p>A little game I made for fun. Pick rock, paper, or scissors, and play against the computer. First to 5 wins.</p>
+<section>
+<h2>Play</h2>
+<p>
+<button type="button" id="game-rock">Rock</button>
+<button type="button" id="game-paper">Paper</button>
+<button type="button" id="game-scissors">Scissors</button>
+</p>
+<p id="game-result" aria-live="polite">Pick one to start.</p>
+<p id="game-score">You: 0 | Computer: 0</p>
+<p><button type="button" id="game-reset">Play again</button></p>
+</section>
+<section>
+<h2>How it works</h2>
+<p>Rock beats scissors, scissors beats paper, and paper beats rock. The computer picks at random each time, so every round is different.</p>
+</section>
+<section>
+<h2>F1 Lights Out - Reaction Game</h2>
+<p>A unique one I made just for fun, like an F1 start. Hit start, wait for the 5 red lights, then click as fast as you can when they go out and turn green. Do not click early.</p>
+<div class="lights" aria-label="F1 start lights">
+<span class="f1-light" id="f1-light-1"></span>
+<span class="f1-light" id="f1-light-2"></span>
+<span class="f1-light" id="f1-light-3"></span>
+<span class="f1-light" id="f1-light-4"></span>
+<span class="f1-light" id="f1-light-5"></span>
+</div>
+<p>
+<button type="button" id="f1-start">Start lights</button>
+<button type="button" id="f1-click">Click when green</button>
+</p>
+<p id="f1-result" aria-live="polite">Hit start, then wait for green.</p>
+<p id="f1-best">Best time: none yet</p>
+</section>
+</main>
+<footer><p>Mohamed Ibrahim - NJIT student - Fall 2026</p></footer>
+</body>
+</html>

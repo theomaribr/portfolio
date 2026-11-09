@@ -30,10 +30,17 @@ footer{border-top:1px solid var(--border);padding:1.75rem;text-align:center;colo
 .photo-grid img{transition:transform 0.3s ease}
 .photo-grid figure:hover img{transform:scale(1.03)}
 .image-caption{color:var(--muted);margin-top:0.5rem}
-img{max-width:100%;height:auto;display:block;border-radius:12px}
+.lights{display:flex;gap:0.6rem;margin:1rem 0}
+.f1-light{width:2.2rem;height:2.2rem;border-radius:50%;background:#334155;display:inline-block}
+.f1-light.on{background:#ef4444;box-shadow:0 0 12px #ef4444}
+.f1-light.go{background:#22c55e;box-shadow:0 0 12px #22c55e}
+img{max-width:100%;height:auto;display:block;border-radius:12px;object-fit:contain}
+main section img, .card img{width:100%;height:auto;object-fit:contain;border:1px solid var(--border)}
+.photo-grid figure{overflow:visible}
 form label{display:block;margin-top:1rem;font-weight:600}
 form input,form textarea{width:100%;padding:0.7rem 0.8rem;margin-top:0.35rem;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--text);font:inherit}
 form button{background:linear-gradient(135deg,#e11d48,#7c3aed);color:#fff;border:none;border-radius:999px;padding:0.8rem 1.4rem;cursor:pointer;margin-top:1rem;font-weight:700}
+main section button{background:linear-gradient(135deg,#e11d48,#7c3aed);color:#fff;border:none;border-radius:999px;padding:0.7rem 1.2rem;cursor:pointer;font-weight:700;margin:0.25rem}
 .error{color:#b91c1c;font-weight:bold}
 .success{color:#065f46;font-weight:bold}
 body.dark .error{color:#fca5a5}
