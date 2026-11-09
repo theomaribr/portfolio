@@ -152,3 +152,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var sections = document.querySelectorAll("main section");
+  sections.forEach(function (s) { s.classList.add("reveal"); });
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(function (s) { observer.observe(s); });
+  } else {
+    sections.forEach(function (s) { s.classList.add("visible"); });
+  }
+});
