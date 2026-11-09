@@ -170,3 +170,32 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach(function (s) { s.classList.add("visible"); });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var counters = document.querySelectorAll("[data-count]");
+  function animateCounter(el) {
+    var target = parseInt(el.getAttribute("data-count"), 10);
+    var current = 0;
+    var step = Math.max(1, Math.floor(target / 30));
+    var timer = setInterval(function () {
+      current += step;
+      if (current >= target) {
+        el.textContent = target;
+        clearInterval(timer);
+      } else {
+        el.textContent = current;
+      }
+    }, 30);
+  }
+  if ("IntersectionObserver" in window) {
+    var counterObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function (c) { counterObserver.observe(c); });
+  }
+});
