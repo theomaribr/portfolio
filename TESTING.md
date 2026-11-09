@@ -34,7 +34,7 @@ Run these tests on the live GitHub Pages site, not just local files. If a test f
 | T27 | Browser console | Open each page and check the console | No errors in the browser console | Pass, 2026-11-04: site script run in a headless DOM on all 5 pages with load, menu toggle, dark-mode toggle and contact-form submit interactions, 0 console errors; DevTools panel itself was unavailable in the automated browser, but no live page showed a blank page, broken image or failed interaction |
 
 ## Notes
-Images used in this site are all under 500 KB. The Weather Data Logger screenshot is cropped to the project title and setup only, so no API key is included.
+Images used in this site are all under 500 KB.
 
 ## Live test run 2026-11-03
 - Live site tested 2026-11-03 in a desktop browser (1919x998). No site failures were found in the tests that could be run.

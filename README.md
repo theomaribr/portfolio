@@ -10,4 +10,4 @@ https://theomaribr.github.io/portfolio/
 Open index.html by double-clicking it in a file browser, or open the portfolio folder in VS Code and use Live Preview. No server, database, or login is needed.
 
 ## Notes
-This site was built for the SDET 101 Midterm Project: Portfolio Web Design. All project screenshots are from class work in Google Colab. The Weather Data Logger screenshot is cropped to the title and setup only, so no API key is included in this repository.
+This site was built for the SDET 101 Midterm Project: Portfolio Web Design. All project screenshots are from class work in Google Colab.
